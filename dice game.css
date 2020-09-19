@@ -1,0 +1,161 @@
+.background{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.gameBackground{
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    height: 625px;
+    width: 900px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 8);
+}
+.active-left{
+    background-color: rgb(204, 202, 202);
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 50%;
+}
+.active-right{
+    background-color: rgb(204, 202, 202);
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 50%;
+}
+
+.dice {
+    position: absolute;
+    top: 35%;
+    left: 44%;
+    width: 125px;
+    height: 125px;
+    animation: 
+    flip-horizontal-bottom
+    0.50s
+    ease-in-out
+    both;
+}
+@keyframes flip-horizontal-bottom{
+    0%{
+        transform: rotateX(0);
+    }
+    100%{
+        transform: rotateX(-180deg);
+    }
+}
+
+button {
+    background: none;
+    border: none;
+    color: #555;
+    font-weight: 300;
+    position: absolute;
+    right: 50%;
+    font-size: 20px;
+    font-family: Lato;
+    transform: translateX(50%);
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 200px;
+}
+button:hover{ font-weight: 600;}
+button:focus{ outline: none;}
+.btn-new{
+    margin-top: 30px;
+}
+.btn-roll{
+    margin-top: 500px;
+}
+.btn-hold{
+    margin-top: 550px;
+}
+.final-score{
+    margin-top: 600px;
+    background: none;
+    border: none;
+    color: #555;
+    font-weight: 300;
+    position: absolute;
+    right: 50%;
+    font-size: 20px;
+    font-family: Lato;
+    transform: translateX(50%);
+    text-transform: uppercase;
+    width: 130px;
+}
+
+.player-name{
+    top: 15%;
+    font-weight: 200;
+    font-size: 40px;
+    font-family: 'Helvetica Neue';
+    position: absolute;
+}
+#name-0{
+    left: 15%;
+}
+#name-1{
+    right: 15%;
+}
+.player-score{
+    position: absolute;
+    top: 28%;
+    font-size: 60px;
+}
+#score-0{
+    left: 22%;
+}
+#score-1{
+    right: 22%;
+}
+#box-0{
+    position: absolute;
+    background-color: red;
+    width: 140px;
+    height: 75px;
+    text-align: center;
+    bottom: 175px;
+    left: 17%;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 8);
+}
+#box-1{
+    position: absolute;
+    background-color: red;
+    width: 140px;
+    height: 75px;
+    text-align: center;
+    bottom: 175px;
+    right: 17%;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 8);
+
+}
+.current{
+    margin-top: 10px;
+    font-weight: 200;
+    font-size: 20px;
+    font-family: 'Haettenschweiler';
+}
+.current-score{
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.winner{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: yellow;
+}
+#winner-0{
+    right: 50%;
+}
+#winner-1{
+    left: 50%;
+}
